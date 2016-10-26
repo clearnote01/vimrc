@@ -58,4 +58,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 syntax on
+
+
+cnoreabbrev Wq wq
+cnoreabbrev WQ wq
+cnoreabbrev wQ wq
+cnoreabbrev QW wq
+cnoreabbrev qw wq
+cnoreabbrev W w
 filetype indent plugin on
