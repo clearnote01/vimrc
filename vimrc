@@ -66,4 +66,13 @@ cnoreabbrev wQ wq
 cnoreabbrev QW wq
 cnoreabbrev qw wq
 cnoreabbrev W w
+
+" Mapping for some useful tricks
+let mapleader=","
+nnoremap <c-p> :FZF<CR> 
+nnoremap tn :tabnew
+nnoremap tt :tabnew<CR>:FZF<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprevious<CR>
+nnoremap nh :nohlsearch<CR>
 filetype indent plugin on
