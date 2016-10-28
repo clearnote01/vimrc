@@ -48,6 +48,19 @@ map <c-l> :call Currentline()<cr>
 map <c-o> :call NoCurrentline()<cr>
 "utilises ctrl+n or ctrl+m for calling functions
 let g:name="Suyash Garg" "setting my name,don't need to explitily specify that its global variable.
+
+" Indentation settings
+set autoindent
+    set mouse= 
+    set shiftwidth=4
+    set softtabstop=4
+    set tabstop=4
+    set expandtab
+    set smartindent
+    set showcmd
+    set nofoldenable
+autocmd FileType vim,html,javascript,coffee,cucumber setlocal sw=2 sts=2 ts=2 
+
 filetype plugin indent on
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
